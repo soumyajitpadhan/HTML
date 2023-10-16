@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<!-- Above line means - This documents is write in html 5 -->
+<html lang="en">
+<!-- HTML - Root element -->
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="This is description" />
+    <meta name="keywords" content="html , web development" />
+    <meta name="robots" content="INDEX , FOLLOW" />
+    <!-- description , keywords , robots ->This meta are using in search engine. -->
+    <title>My first website</title>
+
+    <!-- This is how you include external css. -->
+    <link rel="stylesheet" href="index.css" />
+
+    <!-- This is how you include external JavaScript. -->
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <h1>Rahul</h1>
+    <h2>Rahul</h2>
+    <h3>Rahul</h3>
+    <h4>Rahul</h4>
+    <h5>Rahul</h5>
+    <h6>Rahul</h6>
+    <!-- Lorem for dummy text. -->
+    <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit
+        dignissimos exercitationem temporibus totam laudantium vitae ullam sit,
+        reiciendis <strong>This is strong.</strong> tempora, harum maiores
+        <em>This is emphasized</em> beatae consequatur asperiores Lorem ipsum
+        dolor sit amet consectetur adipisicing elit. Nam fugiat eius quos
+        distinctio nulla veritatis? Nulla in, qui <b>Bold is here </b>iusto nam
+        molestias <i>Italic is here</i> velit id maiores, earum deleniti
+        quibusdam. earum nesciunt ut quas eum?
+    </p>
+    <!-- p*4 -> if we include 4 paragraph at onces. -->
+    <p>First <br />This is a new line.</p>
+    <!-- <hr> -> Horizontal line -->
+    <hr />
+    <p>Second</p>
+    <p>Third</p>
+    <p>Fourth</p>
+
+    <!-- ***********Anchor Tags ************ -->
+
+    <!-- href , target -> attributes. -->
+    <a href="https://google.com" target="_blank">Go to google.</a><br />
+    <a href="https://facebook.com" target="_blank">Go to facebook.</a><br />
+
+    <!-- For internal link. -->
+    <a href="/HTML/ppt.html" target="_blank">Rahul</a><br />
+
+    <!-- For image link -->
+
+    <!-- Image is not present hence alt text is shown. -->
+    <img src="rahul.jpg" alt="Error loading image." /><br />
+    <!-- width and height not recomended in html. -->
+    <img src="https://images.unsplash.com/photo-1655720840699-67e72c0909d1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1267&q=80 "
+        width="300" height="300" alt="remote image" />
+
+    <!-- Table and Lists -->
+
+    <!-- Here ul = unorderlist , ol = orderlist , li = list item -->
+    <ul type="cirle">
+        <li>First</li>
+        <li>Second</li>
+        <ul type="square">
+            <li>Another First</li>
+            <li>Another Second</li>
+            <li>Another Third</li>
+        </ul>
+        <li>Third</li>
+    </ul>
+    <ol type="A">
+        <li>First</li>
+        <li>Second</li>
+        <li>Third</li>
+    </ol>
+
+    <!-- Table -->
+
+    <h3>HTML Table</h3>
+
+    <table border="5">
+        <caption>
+            <b><i> <u> Record of employee details </u></i></b>
+        </caption>
+        <thead>
+            <tr>
+                <th>Employee Name</th>
+                <th>Employee Id</th>
+                <th>Employee Role</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Rahul</td>
+                <td>1233</td>
+                <td>Programmer</td>
+            </tr>
+            <tr>
+                <td>Subham</td>
+                <td>1243</td>
+                <td>Developer</td>
+            </tr>
+            <tr>
+                <td>Rohan</td>
+                <td>1253</td>
+                <td>Teacher</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Form -->
+
+    <h2>This is HTML Form</h2>
+
+    <form action="backend.php">
+        <label for="name">Name: </label>
+        <div>
+            <input type="text" name="myName" id="name" />
+        </div>
+        <br />
+        <div>Role: <input type="text" name="myRole" id="" /></div>
+        <br />
+        <div>Email: <input type="email" name="myEmail" id="" /></div>
+        <br />
+        <div>
+            <input type="date" name="myDate" id="" />
+        </div>
+        <br />
+        <div>
+            <input type="number" name="myBonus" id="" />
+        </div>
+        <br />
+        <label for="eligible">Are you eligible ?</label>
+        <div>
+            <input type="checkbox" name="myEligibility" id="eligible" />
+        </div>
+        <br />
+        <div>
+            Gender: Male <input type="radio" name="myGender" id="" /> Female
+            <input type="radio" name="myGender" id="" /> Other
+            <input type="radio" name="myGender" id="" />
+        </div>
+        <br />
+        <div>
+            Write about yourself: <br />
+            <textarea name="myText" id="" cols="20" rows="5"></textarea>
+        </div>
+        <br />
+        <div>
+            <label for="car">Car</label>
+            <select name="myCar" id="car">
+                <option value="Ind">Indica</option>
+                <option value="swf" selected>Swift</option>
+            </select>
+        </div>
+        <br />
+        <div>
+            <input type="submit" value="Sumbit Now" />
+            <input type="reset" value="Reset Now" />
+        </div>
+    </form>
+
+    <!-- Inline and Block elements.-->
+    <h4>Inline and Block elements.</h4>
+    <!-- Block elements. = div ,li  -->
+    <p style="border: 2px solid red">This is a paragraph</p>
+    <p style="border: 2px solid blue">This is also a paragraph</p>
+    <!-- Inline elements. = strong , a , em -->
+    <span style="border: 2px solid red">This is a span</span>
+    <span style="border: 2px solid red">This is also a span</span>
+
+    <!-- Ids and Classes -->
+    <h3>Ids and Classes</h3>
+    <!-- id means identifier , name  -->
+    <div id="mainBox" class="rebBg">This is mainBox.</div>
+    <span class="redBg"></span>
+
+    <!-- Emmet -->
+    <!-- . is for class and # is for id -->
+
+    <span class="redBg"></span>
+    <span id="mainspan"></span>
+    <div class="redBg blackBoder anotherClass"></div>
+
+    <!-- Emmet takes div tag as default -->
+    <div class="blackBackground"></div>
+
+    <!-- Creating multiple elementd using Emmet -->
+    <!-- span.myClass.myClass2.myClass3.myClass4. + tap -->
+    <span class="myClass myClass2 myClass3">First</span>
+    <span class="myClass myClass2 myClass3">Second</span>
+    <span class="myClass myClass2 myClass3">Third</span>
+
+    <!-- HTML Entities -->
+    <h3>HTML Entities</h3>
+    <div class="container">
+        <p>This is a paragraph.</p>
+    </div>
+
+    <!--&nbsp =  none breaking space. -->
+    <div class="container">
+        <p>This is another &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; paragraph.</p>
+        <p>paragraph is written like this &lt;p&gt;</p>
+        <p>pound is written like this &pound;</p>
+        <p>copyright is written like this &copy;</p>
+        <p>Empty character is written like this &#8203;</p>
+    </div>
+
+    <!-- HTML Semantic Tags. -->
+    <h3>HTML Semantic Tags.</h3>
+    <div>
+        <details>
+            <summary>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim ipsum
+                fugiat officia! Delectus aut nostrum magni at .
+            </summary>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis
+            voluptatum ratione labore aliquid delectus incidunt in ut quos? Ipsa
+            tenetur ullam nesciunt quia delectus deleniti dignissimos possimus optio
+            laborum veritatis?
+        </details>
+    </div>
+</body>
+
+</html>
